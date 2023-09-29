@@ -10,7 +10,7 @@
         <h1>Password Generator</h1>
         <div class="display-container">
             <input readonly placeholder="password" class="display" data-passwordDisplay>
-            <button>
+            <button data-copy>
                 <span data-copyMsg></span>
                 <i class="fa-solid fa-copy"></i>
             </button>
@@ -20,7 +20,7 @@
         <div class="input-container">
             <div class="length-container">
                 <p>Password Length</p>
-                <p>0</p>
+                <p data-lengthNumber>0</p>
             </div>
             <!-- slider -->
             <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
@@ -49,13 +49,10 @@
                     <div data-indicator></div>
                 </div>
             </div>
-
-            <!-- generate password -->
-            <button class="generateButton">Generate Password</button>
-
         </div>
         
     </div>
     <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
