@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="display-container">
+            <input readonly placeholder="password" class="display" data-passwordDisplay>
+            <button>
+                <span data-copyMsg></span>
+                <i class="fa-solid fa-copy"></i>
+            </button>
+
+        </div>
+
+        <div class="input-container">
+            <div class="length-container">
+                <p>Password Length</p>
+                <p>0</p>
+            </div>
+            <!-- slider -->
+            <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+            <!-- checkboxes -->
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Include uppercase letter</label>
+            </div>
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="uppercase">Include lowercase letter</label>
+            </div>
+            <div>
+                <input type="checkbox" id="numbers">
+                <label for="uppercase">Include numbers</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symbols">
+                <label for="uppercase">Include symbols</label>
+            </div>
+
+            <!-- strength -->
+            <div>
+                <div class="strength-contianer">
+                    <p>Strength</p>
+                    <div data-indicator></div>
+                </div>
+            </div>
+
+            <!-- generate password -->
+            <button class="generateButton">Generate Password</button>
+
+        </div>
+        
+    </div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+</body>
+</html>
