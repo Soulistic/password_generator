@@ -9,6 +9,7 @@ const numbersCheck=document.querySelector("#numbers");
 const symbolsCheck=document.querySelector("#symbols");
 const indicator=document.querySelector("[data-indicator]");
 const allCheckBox=document.querySelectorAll("input[type=checkbox]");
+const regeneratePassword=document.querySelector(".RegenerateBtn")
 
 let password="";
 let passwordLength=10;
@@ -172,3 +173,4 @@ uppercaseCheck.addEventListener('change',generatePassword);
 lowercaseCheck.addEventListener('change',generatePassword);
 symbolsCheck.addEventListener('change',generatePassword);
 numbersCheck.addEventListener('change',generatePassword);
+regeneratePassword.addEventListener('click',generatePassword);
